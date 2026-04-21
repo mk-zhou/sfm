@@ -1,0 +1,22 @@
+# 重建数据所属类型
+type: "nuscene"
+#图片文件母路径
+dataset_path: "/dataset/nuscenes"
+# 图片尺寸
+image_width: 1600
+image_height: 900
+#抽帧的步长
+distance_step: 1.5
+#已重建场景重命名前缀
+rename_prefix: "or"
+
+output_dir: "/data/sfm/dataset/nuscenes"
+all: True
+#重建所需相机,一一对应
+camera_names:
+  - "CAM_FRONT"
+  - "CAM_FRONT_LEFT"
+  - "CAM_FRONT_RIGHT"
+  - "CAM_BACK"
+  - "CAM_BACK_LEFT"
+  - "CAM_BACK_RIGHT"

@@ -1,0 +1,21 @@
+import os
+
+def rename_jpeg_to_jpg(folder_path):
+    # 获取文件夹中所有的文件名
+    file_list = os.listdir(folder_path)
+    
+    for file_name in file_list:
+        if file_name.endswith('.jpeg'):
+            # 构建新的文件名
+            new_file_name = file_name[:-5] + '.jpg'
+            # 构建文件的完整路径
+            file_path = os.path.join(folder_path, file_name)
+            new_file_path = os.path.join(folder_path, new_file_name)
+            # 重命名文件
+            os.rename(file_path, new_file_path)
+
+# 指定文件夹路径
+folder_path = 'D:\after_resize_sampling'
+
+# 调用函数将JPEG文件重命名为JPG文件
+rename_jpeg_to_jpg(folder_path)

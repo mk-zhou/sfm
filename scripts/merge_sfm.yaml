@@ -1,0 +1,31 @@
+base_dir: /vepfs_dataset/sjtu/IRMV/sfm/dataset_merge/new336
+camera_types:
+- front_wide
+- back_left
+- front_left
+- back_right
+- front_right
+- back
+data_type: orin
+distance_step: 1.5
+image_height: 1080
+image_width: 1920
+img_data_name: image
+maptr_camera_names:
+- '73'
+- '75'
+- '76'
+- '77'
+- '78'
+- '83'
+merge_scene_id: EP41-ORIN-0S14-00G_EP41_ORIN_02.10.12_1225_20231101-050843_54
+orin_camera_names:
+- '0'
+- '4'
+- '5'
+- '7'
+- '6'
+- '2'
+ref_scene_id: EP41-ORIN-0S14-00G_EP41_ORIN_02.10.12_1225_20231101-000437_1
+rename_prefix: slam_pose_based
+type: multi

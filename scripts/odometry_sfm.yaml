@@ -1,0 +1,39 @@
+# 重建数据所属类型
+type: "odometry"
+#图片文件母路径
+image_dir: "/dataset/data_odometry_color/sequences"
+#图片文件母路径
+seg_dir: "/dataset/data_odometry_color_mask2former/seg_sequences"
+#数据集中图片文件夹的名称
+pose_dir: "/dataset/data_odometry_poses/dataset/poses"
+# 图片尺寸
+image_width: 1241
+image_height: 376
+#抽帧的步长
+distance_step: 1.5
+#已重建场景重命名前缀
+rename_prefix: "fix_intri"
+#重建的场景
+scene_ids:
+  - '00'
+  - '01'
+  - '02'
+  - '03'
+  - '04'
+  - '05'
+  - '06'
+  - '07'
+  - '08'
+  - '09'
+  - '10'
+
+output_dir: "/data/sfm/dataset/odometry"
+
+#是否重建所有场景
+all: False
+#所使用初始内外参的地址
+camera_params_path: "/vepfs_dataset/handsome_man_with_handsome_data/sfm_test/params"
+#重建所需相机,一一对应
+camera_names:
+  - "image_2"
+  - "image_3"
